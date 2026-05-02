@@ -408,15 +408,15 @@ export function Home() {
       />
 
       {/* Reveal solid background past the 3D walkthrough */}
-      <div id="work" className="relative bg-background">
+      <div id="work" className="relative z-10 bg-background">
         <GalleryStrip />
       </div>
 
-      <div id="studio">
+      <div id="studio" className="relative z-10">
         <BrandingSection />
       </div>
 
-      <div id="contact">
+      <div id="contact" className="relative z-10">
         <Footer />
       </div>
     </main>
