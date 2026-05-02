@@ -94,7 +94,7 @@ function HeroOverlay() {
   return (
     <section
       ref={ref}
-      className="relative h-[100svh] flex flex-col items-center justify-center text-center px-6"
+      className="relative z-10 h-[100svh] flex flex-col items-center justify-center text-center px-6"
     >
       <div data-h2 className="text-[10px] md:text-xs tracking-luxury text-foreground/70 uppercase mb-6">
         Gan Gajrai Studio
