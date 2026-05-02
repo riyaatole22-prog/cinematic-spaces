@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CinematicScene } from "@/components/CinematicScene";
+import { CinematicHero } from "@/components/CinematicHero";
 import { Loader } from "@/components/Loader";
 import { MobileFallback } from "@/components/MobileFallback";
 import { IMG, GALLERY } from "@/lib/images";
@@ -368,11 +369,13 @@ export function Home() {
     <main className="relative">
       <Nav />
 
-      {/* Fixed 3D scene behind everything */}
+      {/* New cinematic still-image hero */}
+      <CinematicHero />
+
+      {/* Fixed 3D scene behind the narrative sections */}
       <CinematicScene />
 
       {/* Scroll narrative — each section is one viewport */}
-      <HeroOverlay />
 
       <NarrativeSection
         eyebrow="01 — Threshold"
