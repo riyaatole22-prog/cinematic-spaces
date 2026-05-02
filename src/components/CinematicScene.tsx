@@ -168,7 +168,7 @@ function Scene({ progress }: { progress: number }) {
 export function CinematicScene() {
   const progress = useScrollProgress();
   return (
-    <div className="fixed inset-0 -z-10">
+    <div className="fixed inset-0 z-0 pointer-events-none">
       <Canvas
         camera={{ position: [0, 0.2, 8], fov: 42, near: 0.1, far: 100 }}
         dpr={[1, 1.6]}
