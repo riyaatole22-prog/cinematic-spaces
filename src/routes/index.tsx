@@ -1,10 +1,6 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { RouterProvider } from "@tanstack/react-router";
-import { router } from "./router";
+import { createFileRoute } from "@tanstack/react-router";
+import { Home } from "../components/Home";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+export const Route = createFileRoute("/")({
+  component: Home,
+});
