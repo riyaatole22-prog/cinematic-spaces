@@ -55,7 +55,7 @@ function NarrativeSection({
     align === "right" ? "ml-auto text-right" : align === "center" ? "mx-auto text-center" : "text-left";
 
   return (
-    <section ref={ref} className="relative h-[100svh] flex items-center px-8 md:px-16">
+    <section ref={ref} className="relative z-10 h-[100svh] flex items-center px-8 md:px-16">
       <div className={`max-w-xl ${alignCls}`}>
         <div data-anim className="text-[10px] tracking-luxury text-accent uppercase mb-5">
           {eyebrow}
