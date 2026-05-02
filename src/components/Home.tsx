@@ -298,9 +298,13 @@ function Footer() {
         </div>
         <div className="space-y-2">
           <div className="text-[10px] tracking-luxury text-muted-foreground uppercase mb-3">Studio</div>
-          <div className="text-sm text-foreground/80">Pune, Maharashtra · India</div>
-          <div className="text-sm text-foreground/80">hello@ggstudios.in</div>
-          <div className="text-sm text-foreground/80">+91 85000 50000</div>
+          <div className="text-sm text-foreground/80">Pune · Solapur · Ahilyanagar · Mumbai</div>
+          <a href="mailto:gangajraistudios05@gmail.com" className="block text-sm text-foreground/80 hover:text-accent transition-colors">
+            gangajraistudios05@gmail.com
+          </a>
+          <a href="tel:+918080270231" className="block text-sm text-foreground/80 hover:text-accent transition-colors">
+            +91 80802 70231
+          </a>
         </div>
         <div className="space-y-2">
           <div className="text-[10px] tracking-luxury text-muted-foreground uppercase mb-3">Practice</div>
