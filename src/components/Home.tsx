@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CinematicScene } from "@/components/CinematicScene";
 import { CinematicHero } from "@/components/CinematicHero";
+import { ResidenceProject } from "@/components/ResidenceProject";
 import { Loader } from "@/components/Loader";
 import { MobileFallback } from "@/components/MobileFallback";
 import { IMG, GALLERY } from "@/lib/images";
@@ -357,6 +358,7 @@ export function Home() {
       <main className="relative bg-background min-h-screen">
         <Nav />
         <MobileFallback />
+        <ResidenceProject />
         <div id="studio">
           <BrandingSection />
         </div>
@@ -413,6 +415,11 @@ export function Home() {
       {/* Reveal solid background past the 3D walkthrough */}
       <div id="work" className="relative z-10 bg-background">
         <GalleryStrip />
+      </div>
+
+      {/* Project 02 — Residence */}
+      <div className="relative z-10 bg-background">
+        <ResidenceProject />
       </div>
 
       <div id="studio" className="relative z-10">
