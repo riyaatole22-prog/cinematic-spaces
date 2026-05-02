@@ -1,13 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { CinematicScene } from "@/components/CinematicScene";
-import { CinematicHero } from "@/components/CinematicHero";
-import { ResidenceProject } from "@/components/ResidenceProject";
-import { Loader } from "@/components/Loader";
-import { MobileFallback } from "@/components/MobileFallback";
-import { IMG, GALLERY } from "@/lib/images";
-
+import { CinematicScene } from "../components/CinematicScene";
+import { CinematicHero } from "../components/CinematicHero";
+import { ResidenceProject } from "../components/ResidenceProject";
+import { Loader } from "../components/Loader";
+import { MobileFallback } from "../components/MobileFallback";
+import { IMG, GALLERY } from "../lib/images";
 gsap.registerPlugin(ScrollTrigger);
 
 function useIsMobile() {
