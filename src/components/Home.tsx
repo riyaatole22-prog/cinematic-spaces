@@ -55,7 +55,7 @@ function NarrativeSection({
     align === "right" ? "ml-auto text-right" : align === "center" ? "mx-auto text-center" : "text-left";
 
   return (
-    <section ref={ref} className="relative h-[100svh] flex items-center px-8 md:px-16">
+    <section ref={ref} className="relative z-10 h-[100svh] flex items-center px-8 md:px-16">
       <div className={`max-w-xl ${alignCls}`}>
         <div data-anim className="text-[10px] tracking-luxury text-accent uppercase mb-5">
           {eyebrow}
@@ -94,7 +94,7 @@ function HeroOverlay() {
   return (
     <section
       ref={ref}
-      className="relative h-[100svh] flex flex-col items-center justify-center text-center px-6"
+      className="relative z-10 h-[100svh] flex flex-col items-center justify-center text-center px-6"
     >
       <div data-h2 className="text-[10px] md:text-xs tracking-luxury text-foreground/70 uppercase mb-6">
         Gan Gajrai Studio
@@ -365,7 +365,7 @@ export function Home() {
   }
 
   return (
-    <main className="relative bg-background">
+    <main className="relative">
       <Nav />
 
       {/* Fixed 3D scene behind everything */}
@@ -408,15 +408,15 @@ export function Home() {
       />
 
       {/* Reveal solid background past the 3D walkthrough */}
-      <div id="work" className="relative bg-background">
+      <div id="work" className="relative z-10 bg-background">
         <GalleryStrip />
       </div>
 
-      <div id="studio">
+      <div id="studio" className="relative z-10">
         <BrandingSection />
       </div>
 
-      <div id="contact">
+      <div id="contact" className="relative z-10">
         <Footer />
       </div>
     </main>
