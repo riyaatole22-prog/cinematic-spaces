@@ -365,7 +365,7 @@ export function Home() {
   }
 
   return (
-    <main className="relative bg-background">
+    <main className="relative">
       <Nav />
 
       {/* Fixed 3D scene behind everything */}
